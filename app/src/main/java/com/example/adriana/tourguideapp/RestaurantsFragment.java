@@ -18,7 +18,7 @@ public class RestaurantsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.list, container, false);
 
-        final ArrayList<CityAttraction> restaurants = new ArrayList<CityAttraction>();
+        final ArrayList<CityAttraction> restaurants = new ArrayList<>();
 
         restaurants.add(new CityAttraction(R.drawable.fork_knife_logo, getResources().getString(R.string.artist), getResources().getString(R.string.artist_address)));
         restaurants.add(new CityAttraction(R.drawable.fork_knife_logo, getResources().getString(R.string.bistrot), getResources().getString(R.string.bistrot_address)));

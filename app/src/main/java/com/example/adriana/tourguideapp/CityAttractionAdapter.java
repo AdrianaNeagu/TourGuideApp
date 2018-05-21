@@ -30,7 +30,7 @@ public class CityAttractionAdapter extends ArrayAdapter<CityAttraction> {
 
         CityAttraction currentCityAttraction = getItem(position);
 
-        ImageView eventImage = listItemView.findViewById(R.id.image);
+        ImageView eventImage = listItemView.findViewById(R.id.image_view);
         eventImage.setImageResource(currentCityAttraction.getImage());
 
         TextView eventName = listItemView.findViewById(R.id.name);
