@@ -20,11 +20,11 @@ public class MuseumsFragment extends Fragment {
 
         final ArrayList<CityAttraction> museums = new ArrayList<>();
 
-        museums.add(new CityAttraction(R.drawable.gusti, getResources().getString(R.string.gusti), getResources().getString(R.string.gusti_address)));
-        museums.add(new CityAttraction(R.drawable.art, getResources().getString(R.string.art), getResources().getString(R.string.art_address)));
-        museums.add(new CityAttraction(R.drawable.history, getResources().getString(R.string.history), getResources().getString(R.string.history_address)));
-        museums.add(new CityAttraction(R.drawable.peasant, getResources().getString(R.string.peasant), getResources().getString(R.string.peasant_address)));
-        museums.add(new CityAttraction(R.drawable.zambaccian, getResources().getString(R.string.zambaccian), getResources().getString(R.string.zambaccian_address)));
+        museums.add(new CityAttraction(R.mipmap.gusti, getResources().getString(R.string.gusti), getResources().getString(R.string.gusti_address)));
+        museums.add(new CityAttraction(R.mipmap.art, getResources().getString(R.string.art), getResources().getString(R.string.art_address)));
+        museums.add(new CityAttraction(R.mipmap.history, getResources().getString(R.string.history), getResources().getString(R.string.history_address)));
+        museums.add(new CityAttraction(R.mipmap.peasant, getResources().getString(R.string.peasant), getResources().getString(R.string.peasant_address)));
+        museums.add(new CityAttraction(R.mipmap.zambaccian, getResources().getString(R.string.zambaccian), getResources().getString(R.string.zambaccian_address)));
 
         CityAttractionAdapter adapter = new CityAttractionAdapter(museums, getContext());
         ListView listView = rootView.findViewById(R.id.list);

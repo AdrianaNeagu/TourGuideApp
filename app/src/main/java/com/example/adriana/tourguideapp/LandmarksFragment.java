@@ -20,11 +20,11 @@ public class LandmarksFragment extends Fragment {
 
         final ArrayList<CityAttraction> landmark = new ArrayList<>();
 
-        landmark.add(new CityAttraction(R.drawable.palace_parliament, getResources().getString(R.string.parliament), getResources().getString(R.string.parliament_address)));
-        landmark.add(new CityAttraction(R.drawable.cec_palace, getResources().getString(R.string.cecul), getResources().getString(R.string.cecul_address)));
-        landmark.add(new CityAttraction(R.drawable.athenaeum, getResources().getString(R.string.athenaeum), getResources().getString(R.string.athenaeum_address)));
-        landmark.add(new CityAttraction(R.drawable.triumph_arch, getResources().getString(R.string.triumph), getResources().getString(R.string.triumph_address)));
-        landmark.add(new CityAttraction(R.drawable.stavropoleos, getResources().getString(R.string.stavropoleos), getResources().getString(R.string.stavropoleos_address)));
+        landmark.add(new CityAttraction(R.mipmap.parliament, getResources().getString(R.string.parliament), getResources().getString(R.string.parliament_address)));
+        landmark.add(new CityAttraction(R.mipmap.cecpalace, getResources().getString(R.string.cecul), getResources().getString(R.string.cecul_address)));
+        landmark.add(new CityAttraction(R.mipmap.athenaeum, getResources().getString(R.string.athenaeum), getResources().getString(R.string.athenaeum_address)));
+        landmark.add(new CityAttraction(R.mipmap.triumph, getResources().getString(R.string.triumph), getResources().getString(R.string.triumph_address)));
+        landmark.add(new CityAttraction(R.mipmap.stavropoleos, getResources().getString(R.string.stavropoleos), getResources().getString(R.string.stavropoleos_address)));
 
         CityAttractionAdapter adapter = new CityAttractionAdapter(landmark, getContext());
         ListView listView = rootView.findViewById(R.id.list);

@@ -20,11 +20,11 @@ public class RestaurantsFragment extends Fragment {
 
         final ArrayList<CityAttraction> restaurants = new ArrayList<>();
 
-        restaurants.add(new CityAttraction(R.drawable.fork_knife_logo, getResources().getString(R.string.artist), getResources().getString(R.string.artist_address)));
-        restaurants.add(new CityAttraction(R.drawable.fork_knife_logo, getResources().getString(R.string.bistrot), getResources().getString(R.string.bistrot_address)));
-        restaurants.add(new CityAttraction(R.drawable.fork_knife_logo, getResources().getString(R.string.steakhouse), getResources().getString(R.string.steakhouse_address)));
-        restaurants.add(new CityAttraction(R.drawable.fork_knife_logo, getResources().getString(R.string.modigliani), getResources().getString(R.string.modigliani_address)));
-        restaurants.add(new CityAttraction(R.drawable.fork_knife_logo, getResources().getString(R.string.pescarus), getResources().getString(R.string.pescarus_address)));
+        restaurants.add(new CityAttraction(R.mipmap.fork_knife, getResources().getString(R.string.artist), getResources().getString(R.string.artist_address)));
+        restaurants.add(new CityAttraction(R.mipmap.fork_knife, getResources().getString(R.string.bistrot), getResources().getString(R.string.bistrot_address)));
+        restaurants.add(new CityAttraction(R.mipmap.fork_knife, getResources().getString(R.string.steakhouse), getResources().getString(R.string.steakhouse_address)));
+        restaurants.add(new CityAttraction(R.mipmap.fork_knife, getResources().getString(R.string.modigliani), getResources().getString(R.string.modigliani_address)));
+        restaurants.add(new CityAttraction(R.mipmap.fork_knife, getResources().getString(R.string.pescarus), getResources().getString(R.string.pescarus_address)));
 
         CityAttractionAdapter adapter = new CityAttractionAdapter(restaurants, getContext());
         ListView listView = rootView.findViewById(R.id.list);
